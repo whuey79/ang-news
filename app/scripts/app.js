@@ -15,8 +15,10 @@ var app = angular.module('angNewsApp', [
     'ngCookies',
     'ngResource',
     'ngSanitize',
-    'ngRoute'
-	]);
+    'ngRoute',
+    'firebase'
+	])
+    .constant('FIREBASE_URL','https://glowing-fire-2629.firebaseio.com/');
   
 app.config(function ($routeProvider) {
     $routeProvider
